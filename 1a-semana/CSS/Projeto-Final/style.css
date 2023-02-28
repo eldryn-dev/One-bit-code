@@ -7,33 +7,79 @@
   max-width: 100vw;
 }
 
+@media (max-width:767px) {
 
-@media (min-width:740px) {
+  main{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 20px;
+    max-width: 98vw;
+  }
+
+  .side{
+    width: 75vw;
+    padding: 10px 0px;
+    margin: 0 auto 20px auto;
   
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+  }
 }
+@media (min-width:768px) {
+  
+  main{
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 90vw;
+    max-width: 100vw;
 
-.main-sports {
-  display: grid;
-  grid-template-columns: repeat(3 , 1fr);
-  gap: 10px;
-  max-width: 280px;
-  justify-content: flex-start;
-}
+    gap: 10px 10px;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    padding: 10px 10px;
+  }
 
-img {
-  max-width: 280px;
-}
+  .main-sports {
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
 
+  .item{
+    max-width: 32%;
+  }
+  .item img{
+    max-width: 100%;
+  }
+
+  .side{
+    background-color: rgb(31, 31, 31);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .side img {
+    max-width: 20vw;
+    padding: 10px;
+  }
 
 
 }
 
 #logo{
   height: 40px;
-
   justify-content: center;
   align-items: center;
 }
@@ -59,27 +105,9 @@ img {
   max-width: 100vw;
 }
 
-main{
-  text-align: center;
-  font-family: sans-serif;
-  padding-top: 20px;
-  max-width: 100vw;
-}
-
 .main-sports img{
   width: 90vw;
   border-radius: 12px;
-}
-
-.side{
-  width: 90vw;
-  padding: 30px 0px;
-  margin: 10px auto;
-
-  background-color: rgb(31, 31, 31);
-  color: white;
-  display: flex;
-  flex-direction: column;
 }
 
 .side img {
@@ -92,10 +120,13 @@ main{
 }
 
 footer{
+  display: flex;
   height: 100px;
   background-color: rgb(31, 31, 31);
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 100vw;
+  padding: 20px;
 }
 
 footer img {
