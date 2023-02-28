@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro da liga dos Astronautas</title>
+</head>
+<body>
+  <h1>Cadastro da liga dos Astronautas</h1>
+  <form action=""></form>
+
+    <div>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email">
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="data">Data de Nascimento:</label>
+      <input type="date" id="birthday" name="birthday">
+      <label for="foto">-Foto:</label>
+      <input type="file">
+    </div> 
+
+    <br>
+
+    <div>
+      <label for="nacionality">Nacionalidade:</label>
+      <select name="nacionality" id="nacionality">
+        <option value="russian">Russo</option>
+        <option value="american">Americano</option>
+        <option value="brazilian">Brasileiro</option>
+      </select> -
+      Gênero:
+      <label for="female">F</label>
+      <input type="radio" name="gender" id="gender" value="female">
+      <label for="male">M</label>
+      <input type="radio" name="gender" id="gender" value="male">
+    </div>
+
+    <br>
+
+    <div>
+      Suas Principais Qualidades:
+      <br>
+      <label for="int">Inteligência</label>
+      <input type="checkbox" id="int" name="int">|
+      <label for="res">Resiliência</label>
+      <input type="checkbox" id="res" name="res">|
+      <label for="prep">Preparo Físico</label>
+      <input type="checkbox" id="prep" name="prep">|
+      <label for="edu">Educação</label>
+      <input type="checkbox" id="edu" name="edu">|
+    </div>
+  
+    <br>
+
+    <div>
+      <textarea name="description" id="description" cols="30" rows="10" placeholder="Porquê você gostaria de ser um Astronauta?" maxlength="300"></textarea>
+    </div>
+
+    <div>
+      <input type="submit">
+    </div>
+</body>
+</html>

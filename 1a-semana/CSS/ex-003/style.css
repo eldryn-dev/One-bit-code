@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: gray;
+}
+
+.container{
+  background-color: gray;
+  height: 100vh;
+  display: grid;
+  gap: 5px 10px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.item{
+  background-color: white;
+  border: 2px solid black;
+  font-size: 30px;
+
+  display: flex;
+  text-align: justify;
+}
+
+p{
+  margin: 0px 5px;
+}
