@@ -10,6 +10,23 @@
 
 @media (min-width:740px) {
   
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-sports {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 10px;
+  max-width: 280px;
+  justify-content: flex-start;
+}
+
+img {
+  max-width: 280px;
+}
+
 
 
 }
