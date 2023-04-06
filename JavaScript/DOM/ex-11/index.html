@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalação de Times de Futebol</title>
+  <style>
+    input.gran{
+      width: 120px;
+      margin: 3px;
+    }
+
+    input.peq{
+      width: 35px;
+      margin: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>Escalação</h1>
+    <form method="get" action="#" >
+      Nome:<input type="text" id="nome" class="gran" required><br>
+      Posição:<input type="text" id="posi" class="gran" required><br>
+      Número da Camisa:<input type="number" id="cami" class="peq" required>
+      <input type="submit" value="Adicionar" onclick="addPlayer(), naLista()">
+    </form>
+    <ul>
+    </ul>
+    <form action="#">
+      Remover jogador camisa:<input type="number" id="rem" class="peq">
+      <input type="submit" value="Remover" onclick="remover(),naLista()">
+    </form>
+  </div>
+  <script src="escalacao-dom.js"></script>
+</body>
+</html>

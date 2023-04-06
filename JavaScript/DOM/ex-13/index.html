@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>TIC-TAC-TOE</h1>
+
+  <div id="reg">
+    <div class="player" id="p1">
+      Jogador Azul:<input type="text" id="nameP1">
+      Jogador Vermelho:<input type="text" id="nameP2">
+      <input type="submit" value="Registrar" id="nameReg">
+    </div>
+  </div>
+  
+  <div id="hud">
+    <div class="cell"><button class="btn" id="b11"></button></div>
+    <div class="cell"><button class="btn" id="b12"></button></div>
+    <div class="cell"><button class="btn" id="b13"></button></div>
+    <div class="cell"><button class="btn" id="b21"></button></div>
+    <div class="cell"><button class="btn" id="b22"></button></div>
+    <div class="cell"><button class="btn" id="b23"></button></div>
+    <div class="cell"><button class="btn" id="b31"></button></div>
+    <div class="cell"><button class="btn" id="b32"></button></div>
+    <div class="cell"><button class="btn" id="b33"></button></div>
+  </div>
+
+  <div id="reinicio" style="display: none;"><input type="submit" value="Recomeçar" id="restart"></div>
+
+  <script src="ticTacToe.js"></script>
+  
+</body>
+</html>
